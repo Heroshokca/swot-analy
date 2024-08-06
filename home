@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>SWOT Analysis</h1>
+    <form id="swotForm">
+        <label for="strengths">Strengths:</label><br>
+        <textarea id="strengths" name="strengths" rows="4" cols="50"></textarea><br><br>
+        <label for="weaknesses">Weaknesses:</label><br>
+        <textarea id="weaknesses" name="weaknesses" rows="4" cols="50"></textarea><br><br>
+        <label for="opportunities">Opportunities:</label><br>
+        <textarea id="opportunities" name="opportunities" rows="4" cols="50"></textarea><br><br>
+        <label for="threats">Threats:</label><br>
+        <textarea id="threats" name="threats" rows="4" cols="50"></textarea><br><br>
+        <button type="button" onclick="analyzeSWOT()">Analyze</button>
+    </form>
+    
+    <canvas id="swotChart" width="400" height="400"></canvas>
+
+    <h2>Strategic Plan</h2>
+    <form id="strategyForm">
+        <label for="years">Duration (years):</label><br>
+        <input type="number" id="years" name="years"><br><br>
+        
+        <label for="so">SO Strategy:</label><br>
+        <textarea id="so" name="so" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="st">ST Strategy:</label><br>
+        <textarea id="st" name="st" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="wo">WO Strategy:</label><br>
+        <textarea id="wo" name="wo" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="wt">WT Strategy:</label><br>
+        <textarea id="wt" name="wt" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="kpi">KPIs:</label><br>
+        <textarea id="kpi" name="kpi" rows="4" cols="50"></textarea><br><br>
+        <button type="button" onclick="createStrategyPlan()">Create Plan</button>
+    </form>
+
+    <div id="strategyOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
